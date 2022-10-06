@@ -23,14 +23,16 @@ db.query("Insert into register set ?",{Name,Email,Message,Subject},
 
 //    res.send("Hi welcome back")
 });
-app.listen(5000, ()=>{
-    console.log("server started @ 5000..!!");
-})
+
+const port = process.env.PORT || 5000;
+const host = '0.0.0.0'
+app.listen(port, host, ()=> console.log(`server is running on port ${port}`));
+
 const db= mysql.createConnection({
-    host:"127.0.0.1",
-    user:"root",
-    password:"root",
-    database:"visual"
+    host:"sql6.freesqldatabase.com",
+    user:"sql6524742",
+    password:"huGFGJyDCI",
+    database:"sql6524742"
 })
 db.connect((err)=>{
     if(err){
