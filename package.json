@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon Server.js",
-    "build": "cd portfolio && npm install && npm run build"
+    "build": "npm run build"
+  },
+  "engines": {
+    "node":"v16.15.0"
   },
   "keywords": [],
   "author": "",
